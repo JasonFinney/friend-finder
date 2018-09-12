@@ -32,183 +32,173 @@
                 <div class="head2">
                     <h3>About You</h3>
                 </div>
-                <div id="surveyinputs">
-                    <form action="/" method="post">
-
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="questions">
+                <form action="http:../api/friends" method="post">
+                    <div class="form-group">
+                        <label for="friendName">What's your name?</label>
+                        <input type="text" class="form-control" name="friendName" aria-describedby="Help" placeholder="John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label for="friendPhoto">Please enter a link to a great pic of you!</label>
+                        <input type="text" class="form-control" name="friendPhoto" placeholder="Your photo url here!">
+                    </div>
                     <div id="in-questions-1">
-                        <h3>Question1</h3>
-                        <form action="/" method="post">
-                            <label for="choice1">Your mind is always buzzing with unexplored ideas and plans.</label>
-
-                            <br> <select name="choice1">
-                                <option value="5">5 (Strongly Agree)</option>
-                                <option value="4">4 (Mostly Agree)</option>
-                                <option value="3">3 (Indifferent)</option>
-                                <option value="2">2 (Mostly Agree)</option>
-                                <option value="1">1 (Strongly Disagree)</option>
-                            </select>
-                            <br>
-                            <input type="submit">
-                        </form>
+                        <h3>Question 1</h3>
+                        <label for="question1">Your mind is always buzzing with unexplored ideas and plans.</label>
+                        <br> <select name="question1">
+                            <option value="" disabled selected>How Strongly do you agree?</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                            <option value="4">4 (Mostly Agree)</option>
+                            <option value="3">3 (Indifferent)</option>
+                            <option value="2">2 (Mostly Disgree)</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                        </select>
+                        <br><br>
                     </div>
                     <div id="in-questions-2">
-                        <h3>Question2</h3>
-                        <label for="choice2">Generally speaking, you rely more on your experience than your
+                        <h3>Question 2</h3>
+                        <label for="question2">Generally speaking, you rely more on your experience than your
                             imagination.</label>
                         <br>
-                        <select name="choice2">
+                        <select name="question2">
+                            <option value="" disabled selected>How Strongly do you agree?</option>
                             <option value="5">5 (Strongly Agree)</option>
                             <option value="4">4 (Mostly Agree)</option>
                             <option value="3">3 (Indifferent)</option>
-                            <option value="2">2 (Mostly Agree)</option>
+                            <option value="2">2 (Mostly Disgree)</option>
                             <option value="1">1 (Strongly Disagree)</option>
                         </select>
-                        <br>
-                        <input type="submit">
-                        </form>
+                        <br><br>
                     </div>
                     <div id="in-questions-3">
-                        <h3>Question3</h3>
-                        <label for="choice3">You find it easy to stay relaxed and focused even when there is some
+                        <h3>Question 3</h3>
+                        <label for="question3">You find it easy to stay relaxed and focused even when there is some
                             pressure.</label>
                         <br>
-                        <select name="choice3">
+                        <select name="question3">
+                            <option value="" disabled selected>How Strongly do you agree?</option>
                             <option value="5">5 (Strongly Agree)</option>
                             <option value="4">4 (Mostly Agree)</option>
                             <option value="3">3 (Indifferent)</option>
-                            <option value="2">2 (Mostly Agree)</option>
+                            <option value="2">2 (Mostly Disgree)</option>
                             <option value="1">1 (Strongly Disagree)</option>
                         </select>
-                        <br>
-                        <input type="submit">
-                        </form>
+                        <br><br>
                     </div>
                     <div id="in-questions-4">
-                        <h3>Question4</h3>
-                        <label for="choice4">You rarely do something just out of sheer curiosity.</label>
+                        <h3>Question 4</h3>
+                        <label for="question4">You rarely do something just out of sheer curiosity.</label>
                         <br>
-                        <select name="choice4">
+                        <select name="question4">
+                            <option value="" disabled selected>How Strongly do you agree?</option>
                             <option value="5">5 (Strongly Agree)</option>
                             <option value="4">4 (Mostly Agree)</option>
                             <option value="3">3 (Indifferent)</option>
-                            <option value="2">2 (Mostly Agree)</option>
+                            <option value="2">2 (Mostly Disgree)</option>
                             <option value="1">1 (Strongly Disagree)</option>
                         </select>
-                        <br>
-                        <input type="submit">
-                        </form>
+                        <br><br>
                     </div>
                     <div id="in-questions-5">
-                        <h3>Question5</h3>
-                        <label for="choice5">People can rarely upset you.</label>
+                        <h3>Question 5</h3>
+                        <label for="question5">People can rarely upset you.</label>
                         <br>
-                        <select name="choice5">
+                        <select name="question5">
+                            <option value="" disabled selected>How Strongly do you agree?</option>
                             <option value="5">5 (Strongly Agree)</option>
                             <option value="4">4 (Mostly Agree)</option>
                             <option value="3">3 (Indifferent)</option>
-                            <option value="2">2 (Mostly Agree)</option>
+                            <option value="2">2 (Mostly Disgree)</option>
                             <option value="1">1 (Strongly Disagree)</option>
                         </select>
-                        <br>
-                        <input type="submit">
-                        </form>
+                        <br><br>
                     </div>
                     <div id="in-questions-6">
-                        <h3>Question6</h3>
-                        <label for="choice6">It is often difficult for you to relate to other people's feelings.</label>
+                        <h3>Question 6</h3>
+                        <label for="question6">It is often difficult for you to relate to other people's feelings.</label>
                         <br>
-                        <select name="choice6">
+                        <select name="question6">
+                            <option value="" disabled selected>How Strongly do you agree?</option>
                             <option value="5">5 (Strongly Agree)</option>
                             <option value="4">4 (Mostly Agree)</option>
                             <option value="3">3 (Indifferent)</option>
-                            <option value="2">2 (Mostly Agree)</option>
+                            <option value="2">2 (Mostly Disgree)</option>
                             <option value="1">1 (Strongly Disagree)</option>
                         </select>
-                        <br>
-                        <input type="submit">
-                        </form>
+                        <br><br>
                     </div>
                     <div id="in-questions-7">
-                        <h3>Question7</h3>
-                        <label for="choice7">In a discussion, thruth should be more important than people's
+                        <h3>Question 7</h3>
+                        <label for="question7">In a discussion, thruth should be more important than people's
                             sensitivities</label>
                         <br>
-                        <select name="choice7">
+                        <select name="question7">
+                            <option value="" disabled selected>How Strongly do you agree?</option>
                             <option value="5">5 (Strongly Agree)</option>
                             <option value="4">4 (Mostly Agree)</option>
                             <option value="3">3 (Indifferent)</option>
-                            <option value="2">2 (Mostly Agree)</option>
+                            <option value="2">2 (Mostly Disgree)</option>
                             <option value="1">1 (Strongly Disagree)</option>
                         </select>
-                        <br>
-                        <input type="submit">
-                        </form>
+                        <br><br>
                     </div>
                     <div id="in-questions-8">
-                        <h3>Question8</h3>
-                        <label for="choice8">You rarely get carried away by fantasies and ideas.</label>
+                        <h3>Question 8</h3>
+                        <label for="question8">You rarely get carried away by fantasies and ideas.</label>
                         <br>
-                        <select name="choice8">
+                        <select name="question8">
+                            <option value="" disabled selected>How Strongly do you agree?</option>
                             <option value="5">5 (Strongly Agree)</option>
                             <option value="4">4 (Mostly Agree)</option>
                             <option value="3">3 (Indifferent)</option>
-                            <option value="2">2 (Mostly Agree)</option>
+                            <option value="2">2 (Mostly Disgree)</option>
                             <option value="1">1 (Strongly Disagree)</option>
                         </select>
-                        <br>
-                        <input type="submit">
-                        </form>
+                        <br><br>
                     </div>
                     <div id="in-questions-9">
-                        <h3>Question9</h3>
-                        <label for="choice9">You think that everyone's views should be respected regardless of whether
+                        <h3>Question 9</h3>
+                        <label for="question9">You think that everyone's views should be respected regardless of
+                            whether
                             they are supported by the facts or not.</label>
                         <br>
-                        <select name="choice9">
+                        <select name="question9">
+                            <option value="" disabled selected>How Strongly do you agree?</option>
                             <option value="5">5 (Strongly Agree)</option>
                             <option value="4">4 (Mostly Agree)</option>
                             <option value="3">3 (Indifferent)</option>
-                            <option value="2">2 (Mostly Agree)</option>
+                            <option value="2">2 (Mostly Disgree)</option>
                             <option value="1">1 (Strongly Disagree)</option>
                         </select>
-                        <br>
-                        <input type="submit">
-                        </form>
+                        <br><br>
                     </div>
                     <div id="in-questions-10">
-                        <h3>Question10</h3>
-                        <label for="choice10">You feel more energetic after spending time with a group of people.</label>
+                        <h3>Question 10</h3>
+                        <label for="question10">You feel more energetic after spending time with a group of people.</label>
                         <br>
-                        <select name="choice10">
+                        <select name="question10">
+                            <option value="" disabled selected>How Strongly do you agree?</option>
                             <option value="5">5 (Strongly Agree)</option>
                             <option value="4">4 (Mostly Agree)</option>
                             <option value="3">3 (Indifferent)</option>
-                            <option value="2">2 (Mostly Agree)</option>
+                            <option value="2">2 (Mostly Disgree)</option>
                             <option value="1">1 (Strongly Disagree)</option>
                         </select>
-                        <br>
-                        <input type="submit">
-                        </form>
+                        <br><br><br>
                     </div>
-                </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+                </form>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="links">
-                    <a href="#">API Friends list</a>
-                    <h6>|</h6>
-                    <a href="#">GitHub Repo</a>
-                </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="links">
+                <a href="http:../api/friends">API Friends list</a>
+                <h6>|</h6>
+                <a href="https://github.com/JasonFinney/friend-finder">GitHub Repo</a>
             </div>
         </div>
+    </div>
     </div>
 </body>
 
